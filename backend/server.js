@@ -11,6 +11,7 @@ app.use(express.json())
 
 app.use('/api/usuarios', usuariosRoutes)
 
-app.listen(process.env.PORT, () => {
-  console.log(`Servidor rodando na porta ${process.env.PORT}`)
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`)
 })
