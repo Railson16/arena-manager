@@ -22,7 +22,7 @@ Sistema de gerenciamento de arenas esportivas desenvolvido com Node.js, Express,
 - Edição de usuários
 - Remoção de usuários com confirmação
 - Validação de formulários
-- 🚧 Módulo de reservas em breve
+- * Módulo de reservas em breve
 
 ##  Modelagem do banco
 
@@ -47,7 +47,7 @@ CREATE TABLE reservas (
 );
 ```
 
-## ⚙️ Como rodar localmente
+##  Como rodar localmente
 
 ### Pré-requisitos
 - Node.js v20+
@@ -78,7 +78,7 @@ DB_NAME=arena_manager
 PORT=3001
 ```
 
-## 📁 Estrutura do projeto
+##  Estrutura do projeto
 
 ```
 arena-manager/
@@ -99,3 +99,11 @@ arena-manager/
         api.js
       App.jsx
 ```
+
+##  Regras de Negócio
+
+- Um usuário pode ter várias reservas
+- Uma reserva sempre pertence a um usuário cadastrado
+- Email do usuário é único no sistema
+- Status de pagamento: pendente, pago ou cancelado
+- * Módulo de reservas em implementação
